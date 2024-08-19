@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-casgar-yellow: #F2E205;
+    --color-casgar-blue: #03258C;
+    --color-casgar-green: #7DBF1B;
+    --color-casgar-white: #FFFFFF;
+}
+
+@layer utilities {
+    .bg-casgar-yellow {
+        background-color: var(--color-casgar-yellow);
+    }
+    
+    .bg-casgar-blue {
+        background-color: var(--color-casgar-blue);
+    }
+
+    .bg-casgar-green {
+        background-color: var(--color-casgar-green);
+    }
+
+    .text-casgar-blue {
+        color: var(--color-casgar-blue);
+    }
+
+    .text-casgar-white {
+        color: var(--color-casgar-white);
+    }
+}
+
+a {display: block;}
+
+.skews-container {
+    overflow: hidden;
+}
+
+.skews-wrap-layer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    min-height: 100px;
+    min-width: 100%;
+}
+
+#skew1{
+    fill: #F2E205;
+}
