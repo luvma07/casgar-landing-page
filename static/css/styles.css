@@ -3,27 +3,36 @@
 @tailwind utilities;
 
 :root {
-    --color-casgar-yellow: #F2E205;
+    /* --color-casgar-yellow: #F2E205;
     --color-casgar-blue: #03258C;
-    --color-casgar-green: #7DBF1B;
-    --color-casgar-white: #FFFFFF;
+    --color-casgar-green: #7DBF1B; */
+    
+    --color-casgar-primary : #0583F2;
+    --color-casgar-secondary : #03258C;
+    --color-casgar-tertiary: #7DBF1B;
+
+    --color-casgar-white: #FFFFFF; 
 }
 
 @layer utilities {
-    .bg-casgar-yellow {
-        background-color: var(--color-casgar-yellow);
+    .bg-casgar-primary {
+        background-color: var(--color-casgar-primary);
     }
     
-    .bg-casgar-blue {
-        background-color: var(--color-casgar-blue);
+    .bg-casgar-secondary {
+        background-color: var(--color-casgar-secondary);
     }
 
-    .bg-casgar-green {
-        background-color: var(--color-casgar-green);
+    .bg-casgar-tertiary {
+        background-color: var(--color-casgar-tertiary);
     }
 
-    .text-casgar-blue {
-        color: var(--color-casgar-blue);
+    .bg-casgar-white {
+        background-color: var(--color-casgar-white);
+    }
+
+    .text-casgar-secondary {
+        color: var(--color-casgar-secondary);
     }
 
     .text-casgar-white {
@@ -46,5 +55,5 @@ a {display: block;}
 }
 
 #skew1{
-    fill: #F2E205;
+    fill: var(--color-casgar-primary);
 }
